@@ -1,0 +1,103 @@
+.container {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #E8E4E0;
+  padding: 32px 48px 24px;
+}
+
+.stepper {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.stepCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+
+.stepCircle.completed {
+  background: #27AE60;
+  color: white;
+}
+
+.stepCircle.active {
+  background: #A57865;
+  color: white;
+}
+
+.stepCircle.upcoming {
+  background: white;
+  border: 2px solid #E8E4E0;
+  color: #808080;
+}
+
+.stepLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #808080;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.activeLabel {
+  color: #2C2C2C;
+  font-weight: 600;
+}
+
+.connector {
+  flex: 1;
+  height: 2px;
+  background: #E8E4E0;
+  margin: 0 16px;
+  align-self: flex-start;
+  margin-top: 19px;
+  transition: all 300ms ease;
+}
+
+.connectorCompleted {
+  background: #27AE60;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 24px 20px;
+  }
+
+  .stepper {
+    max-width: 100%;
+  }
+
+  .stepCircle {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .stepLabel {
+    font-size: 12px;
+  }
+
+  .connector {
+    margin: 0 8px;
+    margin-top: 15px;
+  }
+}

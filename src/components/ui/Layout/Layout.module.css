@@ -1,0 +1,333 @@
+/* Container */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.maxWidth-sm {
+  max-width: 640px;
+}
+
+.maxWidth-md {
+  max-width: 768px;
+}
+
+.maxWidth-lg {
+  max-width: 1024px;
+}
+
+.maxWidth-xl {
+  max-width: var(--max-width);
+}
+
+.maxWidth-full {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Grid Gap */
+.gap-1 {
+  gap: var(--space-1);
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-3 {
+  gap: var(--space-3);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.gap-8 {
+  gap: var(--space-8);
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .responsive.cols-12,
+  .responsive.cols-6,
+  .responsive.cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .responsive.cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive.cols-12,
+  .responsive.cols-6,
+  .responsive.cols-4,
+  .responsive.cols-3,
+  .responsive.cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Grid Item */
+.gridItem {
+  min-width: 0;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-6 {
+  grid-column: span 6;
+}
+
+.span-12 {
+  grid-column: span 12;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+/* Direction */
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Align */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+/* Justify */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Wrap */
+.wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap-wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex Gap */
+.flexGap-1 {
+  gap: var(--space-1);
+}
+
+.flexGap-2 {
+  gap: var(--space-2);
+}
+
+.flexGap-3 {
+  gap: var(--space-3);
+}
+
+.flexGap-4 {
+  gap: var(--space-4);
+}
+
+.flexGap-6 {
+  gap: var(--space-6);
+}
+
+.flexGap-8 {
+  gap: var(--space-8);
+}
+
+/* Spacer */
+.spacer {
+  flex-shrink: 0;
+}
+
+.spacer-vertical-1 {
+  height: var(--space-1);
+}
+
+.spacer-vertical-2 {
+  height: var(--space-2);
+}
+
+.spacer-vertical-3 {
+  height: var(--space-3);
+}
+
+.spacer-vertical-4 {
+  height: var(--space-4);
+}
+
+.spacer-vertical-6 {
+  height: var(--space-6);
+}
+
+.spacer-vertical-8 {
+  height: var(--space-8);
+}
+
+.spacer-vertical-10 {
+  height: var(--space-10);
+}
+
+.spacer-vertical-12 {
+  height: var(--space-12);
+}
+
+.spacer-vertical-16 {
+  height: var(--space-16);
+}
+
+.spacer-vertical-20 {
+  height: var(--space-20);
+}
+
+.spacer-horizontal-1 {
+  width: var(--space-1);
+}
+
+.spacer-horizontal-2 {
+  width: var(--space-2);
+}
+
+.spacer-horizontal-3 {
+  width: var(--space-3);
+}
+
+.spacer-horizontal-4 {
+  width: var(--space-4);
+}
+
+.spacer-horizontal-6 {
+  width: var(--space-6);
+}
+
+.spacer-horizontal-8 {
+  width: var(--space-8);
+}
+
+.spacer-horizontal-10 {
+  width: var(--space-10);
+}
+
+.spacer-horizontal-12 {
+  width: var(--space-12);
+}
+
+.spacer-horizontal-16 {
+  width: var(--space-16);
+}
+
+.spacer-horizontal-20 {
+  width: var(--space-20);
+}

@@ -1,0 +1,276 @@
+.welcome {
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.icon {
+  color: #A57865;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.bookingSummary {
+  background: #FAF8F6;
+  border-left: 4px solid #A57865;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #E8E4E0;
+}
+
+.summaryRow:last-child {
+  border-bottom: none;
+}
+
+.summaryLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5C5C5C;
+}
+
+.summaryValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 24px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 300ms ease;
+}
+
+.step:hover {
+  border-color: #A57865;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.stepNumber {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin-bottom: 4px;
+}
+
+.stepDescription {
+  font-size: 14px;
+  color: #5C5C5C;
+}
+
+.stepTime {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #A57865;
+  flex-shrink: 0;
+}
+
+.totalTime {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5C5C5C;
+  text-align: center;
+  padding: 16px;
+  background: #F9F7F5;
+  border-radius: 8px;
+}
+
+.benefitsCard {
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  padding: 32px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.benefitsHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.benefitsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.startButton {
+  width: 100%;
+  max-width: 400px;
+  height: 64px;
+  background: white;
+  color: #A57865;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 300ms ease;
+}
+
+.startButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.laterLink {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 300ms ease;
+}
+
+.laterLink:hover {
+  color: white;
+}
+
+.trustIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px;
+  background: #F9F7F5;
+  border-radius: 12px;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5C5C5C;
+}
+
+.indicator svg {
+  color: #A57865;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .startButton {
+    max-width: 100%;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .trustIndicators {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}

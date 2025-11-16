@@ -1,0 +1,128 @@
+.aboutPage {
+  min-height: calc(100vh - 88px);
+  background: white;
+  padding: 80px 48px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2C2C2C;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #A57865;
+  text-align: center;
+  margin: 0 0 56px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 16px;
+}
+
+.section p {
+  font-size: 16px;
+  color: #5C5C5C;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.features li {
+  font-size: 16px;
+  color: #2C2C2C;
+  padding: 12px 0;
+}
+
+.cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.ctaButton,
+.ctaSecondary {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 300ms ease;
+  display: inline-block;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+}
+
+.ctaButton:hover {
+  background: linear-gradient(135deg, #8B6450 0%, #7A5643 100%);
+  transform: translateY(-2px);
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: #A57865;
+  border: 2px solid #A57865;
+}
+
+.ctaSecondary:hover {
+  background: #FAF8F6;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+    padding: 60px 24px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .ctaButton,
+  .ctaSecondary {
+    width: 100%;
+    text-align: center;
+  }
+}

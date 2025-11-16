@@ -1,0 +1,219 @@
+.featuredProperties {
+  background: white;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.containerFluid {
+  width: 100%;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 64px;
+}
+
+.sectionPretitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary-main);
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+}
+
+.sectionSubtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.propertiesScroll {
+  display: flex;
+  gap: 32px;
+  padding: 0 64px;
+  will-change: transform;
+}
+
+.propertyCard {
+  width: 420px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.propertyImage {
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.propertyImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms ease;
+}
+
+.propertyBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-main);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.propertyInfo {
+  padding: 28px;
+}
+
+.propertyLocation {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.propertyName {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 12px;
+}
+
+.propertyDescription {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.propertyFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.propertyPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-main);
+}
+
+.viewBtn {
+  padding: 10px 24px;
+  background: var(--primary-main);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+  white-space: nowrap;
+}
+
+.viewBtn:hover {
+  box-shadow: 0 4px 16px rgba(165, 120, 101, 0.3);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .featuredProperties {
+    padding: 80px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 60px;
+    padding: 0 32px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+  }
+
+  .propertiesScroll {
+    padding: 0 32px;
+  }
+
+  .propertyCard {
+    width: 380px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .featuredProperties {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 48px;
+    padding: 0 24px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+  }
+
+  .propertiesScroll {
+    padding: 0 24px;
+    gap: 20px;
+  }
+
+  .propertyCard {
+    width: 320px;
+  }
+
+  .propertyImage {
+    height: 240px;
+  }
+
+  .propertyInfo {
+    padding: 20px;
+  }
+
+  .propertyName {
+    font-size: 20px;
+  }
+
+  .propertyFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .viewBtn {
+    width: 100%;
+  }
+}

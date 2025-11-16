@@ -1,0 +1,35 @@
+.homePage {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Loading state */
+.homePage.loading {
+  opacity: 0;
+}
+
+.homePage.loaded {
+  opacity: 1;
+  transition: opacity 600ms ease-in-out;
+}

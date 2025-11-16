@@ -1,0 +1,459 @@
+.aiRoomSelection {
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stepBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #F9F7F5;
+  color: #A57865;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.description {
+  font-size: 18px;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.recommendedCard {
+  background: linear-gradient(135deg, #FAF8F6 0%, #F5F1EE 100%);
+  border: 2px solid #A57865;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.imageGallery {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.roomImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aiBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(165, 120, 101, 0.95);
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 100px;
+}
+
+.galleryNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.galleryNav:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.galleryNavRight {
+  left: auto;
+  right: 16px;
+}
+
+.imageDots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.dotActive,
+.dot:hover {
+  background: white;
+  transform: scale(1.2);
+}
+
+.cardContent {
+  padding: 32px;
+}
+
+.roomName {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.categoryBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #A57865;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.aiReasoning {
+  background: #E8F5E9;
+  border-left: 4px solid #27AE60;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.reasoningHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin-bottom: 12px;
+}
+
+.reasoningHeader svg {
+  color: #27AE60;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reason {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #2C2C2C;
+}
+
+.reason svg {
+  color: #27AE60;
+  flex-shrink: 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2C2C2C;
+}
+
+.feature svg {
+  color: #A57865;
+  flex-shrink: 0;
+}
+
+.priceSection {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.originalPrice {
+  font-size: 16px;
+  color: #808080;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.aiPrice {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin-bottom: 8px;
+}
+
+.savings {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 4px 12px;
+  background: #E8F5E9;
+  color: #27AE60;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.aiOptimized {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #A57865;
+}
+
+.selectButton {
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 300ms ease;
+}
+
+.selectButton.selected {
+  background: #27AE60;
+}
+
+.selectButton:hover:not(.selected) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(165, 120, 101, 0.3);
+}
+
+.alternatives {
+  margin-bottom: 40px;
+}
+
+.alternativesTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.alternativesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.altCard {
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.altCard:hover {
+  border-color: #A57865;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.altCardSelected {
+  border-color: #27AE60;
+  border-width: 2px;
+}
+
+.altImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.altImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.altBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #A57865;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.altContent {
+  padding: 20px;
+}
+
+.altTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.altFeatures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.altFeature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #5C5C5C;
+}
+
+.altFeature svg {
+  color: #A57865;
+}
+
+.altPrice {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin-bottom: 12px;
+}
+
+.altButton {
+  width: 100%;
+  height: 44px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 300ms ease;
+}
+
+.altButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+.altButtonSelected {
+  background: #27AE60;
+  border-color: #27AE60;
+  color: white;
+}
+
+.continueButton {
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.continueButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(165, 120, 101, 0.3);
+}
+
+.continueButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .imageGallery {
+    height: 300px;
+  }
+
+  .cardContent {
+    padding: 24px;
+  }
+
+  .roomName {
+    font-size: 24px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alternativesGrid {
+    grid-template-columns: 1fr;
+  }
+}

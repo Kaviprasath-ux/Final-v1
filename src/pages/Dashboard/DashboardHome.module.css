@@ -1,0 +1,743 @@
+.dashboardHome {
+  background: #FAFAFA;
+  padding: 40px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Welcome Section */
+.welcomeSection {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcomeLeft {
+  flex: 1;
+}
+
+.welcomeTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.welcomeSubtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5C5C5C;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.welcomeRight {
+  flex-shrink: 0;
+}
+
+.dateDisplay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5C5C5C;
+}
+
+.dateDisplay svg {
+  color: #A57865;
+}
+
+/* Quick Actions Section */
+.quickActionsSection {
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 20px;
+}
+
+.quickActionsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.actionCard {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 24px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.actionCard:hover {
+  border-color: #A57865;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.actionBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+}
+
+.actionBadgeCount {
+  background: #FFA500;
+}
+
+.actionBadgeAlert {
+  background: #DC3545;
+}
+
+.actionIcon {
+  width: 48px;
+  height: 48px;
+  background: #FAF8F6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionIcon svg {
+  color: #A57865;
+}
+
+.actionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.actionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.actionDescription {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Upcoming Stays Section */
+.upcomingStaysSection {
+  margin-bottom: 48px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.viewAllLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #A57865;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.viewAllLink:hover {
+  text-decoration: underline;
+}
+
+.bookingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bookingCard {
+  background: #FFFFFF;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  transition: all 300ms;
+}
+
+.bookingCard:hover {
+  border-color: #A57865;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.bookingLeft {
+  flex: 1;
+}
+
+.bookingHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.bookingReference {
+  font-size: 13px;
+  font-weight: 500;
+  color: #808080;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.statusConfirmed {
+  background: #E8F5E9;
+  color: #27AE60;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.roomName {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.bookingDetails {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5C5C5C;
+}
+
+.detailItem svg {
+  color: #A57865;
+  flex-shrink: 0;
+}
+
+.bookingRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.countdownBadge {
+  background: #FAF8F6;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.daysAway {
+  font-size: 18px;
+  font-weight: 700;
+  color: #A57865;
+  margin-bottom: 4px;
+}
+
+.checkInDate {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preCheckInButton {
+  background: #A57865;
+  color: white;
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.preCheckInButton:hover {
+  background: #8B6450;
+}
+
+.viewDetailsButton {
+  background: transparent;
+  border: 1.5px solid #E8E4E0;
+  color: #5C5C5C;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.viewDetailsButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+.manageButton {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1.5px solid #E8E4E0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5C5C5C;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.manageButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+/* Empty State */
+.emptyState {
+  background: #FAF8F6;
+  border: 1px dashed #E8E4E0;
+  border-radius: 12px;
+  padding: 48px;
+  text-align: center;
+}
+
+.emptyState svg {
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+}
+
+.emptyDescription {
+  font-size: 15px;
+  color: #5C5C5C;
+  margin: 0 0 24px;
+}
+
+.browseRoomsButton {
+  background: #A57865;
+  color: white;
+  border: none;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.browseRoomsButton:hover {
+  background: #8B6450;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 120, 101, 0.3);
+}
+
+/* Two-Column Layout */
+.twoColumnLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+/* Recent Activity */
+.recentActivitySection {
+  background: #FFFFFF;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 28px;
+  height: fit-content;
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 8px;
+}
+
+.filterTab {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5C5C5C;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.filterTab:hover {
+  background: #F5F1EE;
+}
+
+.filterTabActive {
+  background: #FAF8F6;
+  color: #A57865;
+}
+
+.activityTimeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.activityItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #F5F1EE;
+  position: relative;
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+}
+
+.timelineDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #E8E4E0;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.activityContent {
+  flex: 1;
+}
+
+.activityTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin-bottom: 4px;
+}
+
+.activityDetails {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5C5C5C;
+  margin-bottom: 8px;
+}
+
+.activityTimestamp {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.activityLink {
+  font-size: 13px;
+  font-weight: 600;
+  color: #A57865;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 8px;
+  transition: all 300ms;
+}
+
+.activityLink:hover {
+  text-decoration: underline;
+}
+
+.activityEmpty {
+  text-align: center;
+  padding: 40px;
+}
+
+.emptyText {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 16px 0 4px;
+}
+
+.emptySubtext {
+  font-size: 14px;
+  color: #808080;
+  margin: 0;
+}
+
+.showMoreButton {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: 1.5px solid #E8E4E0;
+  color: #5C5C5C;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.showMoreButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+/* Quick Stats */
+.quickStatsSection {
+  background: #FFFFFF;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 28px;
+  height: fit-content;
+}
+
+.statsCards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statCard {
+  background: #FAF8F6;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statCard svg {
+  color: #A57865;
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: #808080;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2C2C2C;
+  line-height: 1;
+}
+
+.statChange {
+  font-size: 12px;
+  font-weight: 600;
+  color: #27AE60;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.statChange svg {
+  color: #27AE60;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+
+.statSubtext {
+  font-size: 12px;
+  font-weight: 400;
+  color: #808080;
+  margin-top: 4px;
+}
+
+.loyaltyBadge {
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.loyaltyBadge svg {
+  margin-bottom: 8px;
+}
+
+.badgeText {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badgeSubtext {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .quickActionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .twoColumnLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboardHome {
+    padding: 24px;
+  }
+
+  .welcomeSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .welcomeRight {
+    display: none;
+  }
+
+  .welcomeTitle {
+    font-size: 24px;
+  }
+
+  .welcomeSubtitle {
+    font-size: 14px;
+  }
+
+  .quickActionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actionCard {
+    height: 120px;
+    padding: 20px;
+  }
+
+  .bookingCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .bookingRight {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .countdownBadge {
+    width: 100%;
+  }
+
+  .actionButtons {
+    width: 100%;
+  }
+
+  .preCheckInButton,
+  .viewDetailsButton {
+    flex: 1;
+  }
+
+  .activityHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboardHome {
+    padding: 16px;
+  }
+
+  .actionCard {
+    height: auto;
+    min-height: 120px;
+  }
+
+  .bookingDetails {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .recentActivitySection,
+  .quickStatsSection {
+    padding: 20px;
+  }
+}

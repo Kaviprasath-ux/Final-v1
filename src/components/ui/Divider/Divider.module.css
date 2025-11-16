@@ -1,0 +1,118 @@
+/* Divider Base */
+.divider {
+  border: none;
+  background-color: var(--border-light);
+  flex-shrink: 0;
+}
+
+/* Horizontal */
+.horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+/* Vertical */
+.vertical {
+  width: 1px;
+  height: 100%;
+  align-self: stretch;
+}
+
+/* Variants */
+.solid {
+  background-color: var(--border-light);
+}
+
+.dashed {
+  background: none;
+  border-top: 1px dashed var(--border-light);
+}
+
+.horizontal.dashed {
+  border-top: 1px dashed var(--border-light);
+}
+
+.vertical.dashed {
+  border-top: none;
+  border-left: 1px dashed var(--border-light);
+}
+
+.dotted {
+  background: none;
+  border-top: 1px dotted var(--border-light);
+}
+
+.horizontal.dotted {
+  border-top: 1px dotted var(--border-light);
+}
+
+.vertical.dotted {
+  border-top: none;
+  border-left: 1px dotted var(--border-light);
+}
+
+/* Spacing */
+.spacing-none {
+  margin: 0;
+}
+
+.spacing-small.horizontal {
+  margin: var(--space-2) 0;
+}
+
+.spacing-small.vertical {
+  margin: 0 var(--space-2);
+}
+
+.spacing-medium.horizontal {
+  margin: var(--space-4) 0;
+}
+
+.spacing-medium.vertical {
+  margin: 0 var(--space-4);
+}
+
+.spacing-large.horizontal {
+  margin: var(--space-6) 0;
+}
+
+.spacing-large.vertical {
+  margin: 0 var(--space-6);
+}
+
+/* Divider with Content */
+.hasContent {
+  display: flex;
+  align-items: center;
+  background: none;
+  height: auto;
+  width: auto;
+  gap: var(--space-3);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+}
+
+.hasContent::before,
+.hasContent::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+.hasContent.dashed::before,
+.hasContent.dashed::after {
+  background: none;
+  border-top: 1px dashed var(--border-light);
+}
+
+.hasContent.dotted::before,
+.hasContent.dotted::after {
+  background: none;
+  border-top: 1px dotted var(--border-light);
+}
+
+.content {
+  white-space: nowrap;
+  font-weight: var(--fw-medium);
+}

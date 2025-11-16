@@ -1,0 +1,138 @@
+/* Wrapper */
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* Checkbox Wrapper */
+.checkboxWrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Checkbox Input */
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/* Checkmark */
+.checkmark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-primary);
+  transition: all var(--transition-base);
+  flex-shrink: 0;
+}
+
+/* Icon */
+.icon {
+  width: 16px;
+  height: 16px;
+  color: var(--text-white);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all var(--transition-fast);
+}
+
+/* Hover State */
+.checkboxWrapper:hover .checkmark {
+  border-color: var(--primary-main);
+}
+
+/* Checked State */
+.checkbox:checked + .checkmark {
+  background-color: var(--primary-main);
+  border-color: var(--primary-main);
+}
+
+.checkbox:checked + .checkmark .icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Indeterminate State */
+.checkbox:indeterminate + .checkmark {
+  background-color: var(--primary-main);
+  border-color: var(--primary-main);
+}
+
+.checkbox:indeterminate + .checkmark .icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Focus State */
+.checkbox:focus-visible + .checkmark {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* Disabled State */
+.disabled + .checkmark {
+  background-color: var(--neutral-100);
+  border-color: var(--border-light);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.checkbox:disabled {
+  cursor: not-allowed;
+}
+
+.checkbox:disabled ~ .label {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+}
+
+/* Error State */
+.hasError + .checkmark {
+  border-color: var(--error);
+}
+
+.hasError:checked + .checkmark,
+.hasError:indeterminate + .checkmark {
+  background-color: var(--error);
+  border-color: var(--error);
+}
+
+/* Label */
+.label {
+  margin-left: var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Error Message */
+.error {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+  color: var(--error);
+  margin-left: 22px;
+}
+
+/* Helper Text */
+.helperText {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+  color: var(--text-secondary);
+  margin-left: 22px;
+}

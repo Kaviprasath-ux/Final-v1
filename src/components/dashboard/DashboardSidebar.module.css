@@ -1,0 +1,107 @@
+.sidebar {
+  width: 280px;
+  height: calc(100vh - 80px);
+  background: white;
+  border-right: 1px solid #E8E4E0;
+  position: sticky;
+  top: 80px;
+  padding: 32px 24px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5C5C5C;
+  cursor: pointer;
+  transition: all 200ms ease;
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+
+.navItem:hover {
+  background: #F9F7F5;
+  color: #2C2C2C;
+}
+
+.navItem.active {
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(165, 120, 101, 0.3);
+}
+
+.navLabel {
+  flex: 1;
+}
+
+.badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  background: #A57865;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem.active .badge {
+  background: white;
+  color: #A57865;
+}
+
+.badge.badgeAlert {
+  background: #DC3545;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.divider {
+  height: 1px;
+  background: #E8E4E0;
+  margin: 16px 0;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 99;
+    box-shadow: 2px 0 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 260px;
+  }
+}

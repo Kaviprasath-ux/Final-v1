@@ -1,0 +1,155 @@
+.experienceGrid {
+  background: var(--bg-secondary);
+  padding: 120px 64px;
+}
+
+.container {
+  max-width: 1344px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionPretitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary-main);
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+}
+
+.sectionSubtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.experienceCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.cardIcon {
+  width: 72px;
+  height: 72px;
+  background: var(--primary-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: var(--primary-main);
+}
+
+.experienceCard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 12px;
+}
+
+.experienceCard p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.cardLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 200ms ease;
+}
+
+.cardLink:hover {
+  gap: 8px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .experienceGrid {
+    padding: 80px 32px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .experienceGrid {
+    padding: 60px 24px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 48px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .experienceCard {
+    padding: 32px 24px;
+  }
+
+  .cardIcon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .cardIcon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

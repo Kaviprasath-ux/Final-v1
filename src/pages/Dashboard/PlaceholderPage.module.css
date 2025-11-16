@@ -1,0 +1,66 @@
+.placeholderPage {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.content {
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 80px 48px;
+  text-align: center;
+}
+
+.icon {
+  color: #D1CCC7;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.text {
+  font-size: 16px;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .content {
+    padding: 60px 24px;
+  }
+
+  .message {
+    font-size: 20px;
+  }
+}

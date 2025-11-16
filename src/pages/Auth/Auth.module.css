@@ -1,0 +1,551 @@
+/* Back Link */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #A57865;
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: all 300ms ease;
+}
+
+.backLink:hover {
+  color: #8B6450;
+  transform: translateX(-4px);
+}
+
+/* Header */
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+/* Icon Container (for forgot/reset/verify pages) */
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: #FAF8F6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconContainer svg {
+  color: #A57865;
+}
+
+.centerHeader {
+  text-align: center;
+}
+
+.centerHeader .title {
+  margin-bottom: 12px;
+}
+
+.centerHeader .subtitle {
+  max-width: 400px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Form */
+.form {
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2C2C2C;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #2C2C2C;
+  transition: all 300ms ease;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #B0B0B0;
+}
+
+.input:hover {
+  border-color: #D1CCC7;
+}
+
+.input:focus {
+  border-color: #A57865;
+  box-shadow: 0 0 0 3px rgba(165, 120, 101, 0.1);
+}
+
+.inputError {
+  border-color: #DC3545 !important;
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Password Wrapper */
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper .input {
+  padding-right: 48px;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #808080;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.passwordToggle:hover {
+  color: #A57865;
+}
+
+/* Error Message */
+.errorMessage {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #DC3545;
+  margin-top: 6px;
+}
+
+.errorMessage svg {
+  flex-shrink: 0;
+}
+
+/* Success Message */
+.successMessage {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: #E8F5E9;
+  border-left: 4px solid #27AE60;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.successMessage svg {
+  color: #27AE60;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.successMessageText {
+  font-size: 14px;
+  color: #27AE60;
+  line-height: 1.5;
+}
+
+/* Options Row (Remember Me + Forgot Password) */
+.optionsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+/* Custom Checkbox */
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.hiddenCheckbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.customCheckbox {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #E8E4E0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+  background: white;
+}
+
+.customCheckbox.checked {
+  background: #A57865;
+  border-color: #A57865;
+}
+
+.checkmark {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.checkboxText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5C5C5C;
+}
+
+.forgotLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #A57865;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.primaryButton {
+  width: 100%;
+  height: 52px;
+  background: #A57865;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 300ms ease;
+  margin-bottom: 24px;
+}
+
+.primaryButton:hover:not(:disabled) {
+  background: #8B6450;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 120, 101, 0.3);
+}
+
+.primaryButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: #E8E4E0;
+}
+
+.dividerText {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  white-space: nowrap;
+}
+
+/* Social Buttons */
+.socialButtons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.socialButton {
+  flex: 1;
+  height: 52px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2C2C2C;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.socialButton:hover {
+  border-color: #A57865;
+  background: #FAF8F6;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+.footerText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5C5C5C;
+}
+
+.footerLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #A57865;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: all 300ms ease;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+/* Password Strength Indicator */
+.passwordStrength {
+  margin: 8px 0 16px;
+}
+
+.strengthBar {
+  height: 4px;
+  width: 100%;
+  background: #E8E4E0;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.strengthFill {
+  height: 100%;
+  transition: all 300ms ease;
+  border-radius: 2px;
+}
+
+.strengthText {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.weak {
+  background: #DC3545;
+  color: #DC3545;
+}
+
+.medium {
+  background: #FFA500;
+  color: #FFA500;
+}
+
+.strong {
+  background: #27AE60;
+  color: #27AE60;
+}
+
+/* Password Requirements */
+.passwordRequirements {
+  margin: 12px 0 20px;
+}
+
+.requirementsTitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #808080;
+  margin-bottom: 8px;
+}
+
+.requirementsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.requirementItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #5C5C5C;
+}
+
+.requirementItem svg {
+  flex-shrink: 0;
+}
+
+.requirementMet {
+  color: #27AE60;
+}
+
+.requirementUnmet {
+  color: #808080;
+}
+
+/* OTP Input (for email verification) */
+.otpContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.otpInput {
+  width: 56px;
+  height: 64px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  border: 2px solid #E8E4E0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 300ms ease;
+}
+
+.otpInput:focus {
+  border-color: #A57865;
+  box-shadow: 0 0 0 3px rgba(165, 120, 101, 0.1);
+}
+
+/* Resend Section */
+.resendSection {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.resendText {
+  font-size: 14px;
+  color: #5C5C5C;
+  margin-bottom: 8px;
+}
+
+.resendLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #A57865;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.resendLink:hover {
+  text-decoration: underline;
+}
+
+.resendLink:disabled {
+  color: #B0B0B0;
+  cursor: not-allowed;
+}
+
+.countdown {
+  color: #808080;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .input {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .primaryButton {
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .socialButton {
+    height: 48px;
+  }
+
+  .socialButtons {
+    flex-direction: column;
+  }
+
+  .optionsRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .otpInput {
+    width: 48px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .iconContainer {
+    width: 64px;
+    height: 64px;
+  }
+}

@@ -1,0 +1,187 @@
+.authLayout {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Left Side - Brand */
+.brandSide {
+  display: none;
+  position: relative;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+@media (min-width: 1024px) {
+  .brandSide {
+    display: flex;
+    width: 50%;
+  }
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.brandContent {
+  position: relative;
+  z-index: 10;
+  max-width: 480px;
+  color: white;
+}
+
+.logoLink {
+  display: inline-block;
+  margin-bottom: 48px;
+  text-decoration: none;
+  transition: opacity 300ms ease;
+}
+
+.logoLink:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: white;
+  margin: 0;
+}
+
+.brandTitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 16px;
+}
+
+.brandDescription {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0 0 48px;
+}
+
+.features {
+  display: flex;
+  gap: 16px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.featureSubtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Right Side - Form */
+.formSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: white;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 480px;
+}
+
+.mobileLogo {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .mobileLogo {
+    display: none;
+  }
+}
+
+.mobileLogo a {
+  text-decoration: none;
+}
+
+.mobileLogoText {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.formContent {
+  margin-bottom: 32px;
+}
+
+.backLink {
+  text-align: center;
+}
+
+.backLink a {
+  font-size: 14px;
+  color: #5C5C5C;
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+
+.backLink a:hover {
+  color: #A57865;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .formSide {
+    padding: 24px;
+  }
+
+  .formContainer {
+    max-width: 100%;
+  }
+
+  .mobileLogo {
+    margin-bottom: 24px;
+  }
+
+  .mobileLogoText {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+}

@@ -1,0 +1,193 @@
+.preCheckInLayout {
+  min-height: 100vh;
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+}
+
+.progressBarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #E8E4E0;
+  z-index: 1000;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #A57865 0%, #8B6450 100%);
+  transition: width 0.5s ease;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #E8E4E0;
+  padding: 24px 48px;
+  margin-top: 6px;
+  z-index: 100;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #2C2C2C;
+}
+
+.stepIndicator {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5C5C5C;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exitButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #5C5C5C;
+  transition: all 300ms ease;
+}
+
+.exitButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+  background: #F9F7F5;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 48px 24px 120px;
+  overflow-y: auto;
+}
+
+.contentInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #E8E4E0;
+  padding: 24px 48px;
+  z-index: 100;
+}
+
+.footerInner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.backButton,
+.nextButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.backButton {
+  background: white;
+  border: 1px solid #E8E4E0;
+  color: #2C2C2C;
+}
+
+.backButton:hover:not(:disabled) {
+  border-color: #A57865;
+  color: #A57865;
+  background: #F9F7F5;
+}
+
+.backButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nextButton {
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  border: none;
+  color: white;
+}
+
+.nextButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(165, 120, 101, 0.3);
+}
+
+.nextButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 24px;
+  }
+
+  .logo {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .stepIndicator {
+    font-size: 12px;
+  }
+
+  .exitButton {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mainContent {
+    padding: 32px 16px 120px;
+  }
+
+  .footer {
+    padding: 16px 24px;
+  }
+
+  .footerInner {
+    gap: 12px;
+  }
+
+  .backButton,
+  .nextButton {
+    height: 48px;
+    padding: 0 24px;
+    font-size: 14px;
+  }
+}

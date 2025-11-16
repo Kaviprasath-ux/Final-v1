@@ -1,0 +1,128 @@
+.dashboardLayout {
+  width: 100%;
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.sidebarContainer {
+  position: relative;
+}
+
+.mainContent {
+  flex: 1;
+  min-height: calc(100vh - 80px);
+  padding: 48px;
+  overflow-y: auto;
+}
+
+.mobileMenuButton {
+  position: fixed;
+  top: 96px;
+  left: 16px;
+  z-index: 101;
+  width: 48px;
+  height: 48px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease;
+}
+
+.mobileMenuButton:hover {
+  background: #F9F7F5;
+  border-color: #A57865;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 98;
+}
+
+.loadingContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #E8E4E0;
+  border-top-color: #A57865;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5C5C5C;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .mainContent {
+    padding: 32px;
+  }
+
+  .mobileMenuButton {
+    display: flex;
+  }
+
+  .sidebarContainer {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+  }
+
+  .sidebarContainer.sidebarOpen {
+    transform: translateX(0);
+  }
+
+  .backdrop {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 24px;
+  }
+
+  .mobileMenuButton {
+    width: 44px;
+    height: 44px;
+    top: 92px;
+    left: 12px;
+  }
+}

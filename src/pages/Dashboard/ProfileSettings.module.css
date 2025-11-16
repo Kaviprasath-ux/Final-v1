@@ -1,0 +1,1142 @@
+.profileSettings {
+  background: #FAFAFA;
+  padding: 40px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Page Header */
+.pageHeader {
+  margin-bottom: 32px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+}
+
+.pageSubtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+/* Tab Navigation */
+.tabNavigation {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #E8E4E0;
+  overflow-x: auto;
+}
+
+.tabButton {
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5C5C5C;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 300ms;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabButton:hover {
+  color: #2C2C2C;
+}
+
+.tabButtonActive {
+  color: #A57865;
+  border-bottom-color: #A57865;
+}
+
+.tabButton svg {
+  flex-shrink: 0;
+}
+
+/* Tab Content */
+.tabContent {
+  background: #FFFFFF;
+  border: 1px solid #E8E4E0;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+/* Section Headers */
+.sectionHeader {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 6px;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+  margin: 0;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #E8E4E0;
+  margin: 32px 0;
+}
+
+/* Avatar Section */
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.avatarWrapper {
+  position: relative;
+}
+
+.avatarPlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.avatarImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #E8E4E0;
+}
+
+.avatarActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uploadButton {
+  background: #A57865;
+  color: white;
+  border: none;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 300ms;
+}
+
+.uploadButton:hover {
+  background: #8B6450;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 120, 101, 0.3);
+}
+
+.removeButton {
+  background: transparent;
+  border: 1.5px solid #E8E4E0;
+  color: #5C5C5C;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.removeButton:hover {
+  border-color: #DC3545;
+  color: #DC3545;
+}
+
+.avatarHelp {
+  font-size: 13px;
+  color: #808080;
+  margin-top: 8px;
+}
+
+/* Form Grid */
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroupFull {
+  grid-column: 1 / -1;
+}
+
+.formLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.formLabel svg {
+  color: #A57865;
+  flex-shrink: 0;
+}
+
+.formInput {
+  width: 100%;
+  height: 48px;
+  background: #FAFAFA;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #2C2C2C;
+  transition: all 300ms;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #A57865;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(165, 120, 101, 0.1);
+}
+
+.formInput:disabled {
+  background: #F5F1EE;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+.formInput::placeholder {
+  color: #808080;
+}
+
+.formSelect {
+  width: 100%;
+  height: 48px;
+  background: #FAFAFA;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #2C2C2C;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.formSelect:focus {
+  outline: none;
+  border-color: #A57865;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(165, 120, 101, 0.1);
+}
+
+.disabledNote {
+  font-size: 12px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.disabledNote svg {
+  flex-shrink: 0;
+}
+
+/* Emergency Contact Section */
+.emergencyContact {
+  background: #FAF8F6;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.emergencyContact .sectionTitle {
+  font-size: 18px;
+}
+
+/* Form Actions */
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 24px;
+  border-top: 1px solid #E8E4E0;
+}
+
+.cancelButton {
+  background: transparent;
+  border: 1.5px solid #E8E4E0;
+  color: #5C5C5C;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.cancelButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+.saveButton {
+  background: #A57865;
+  color: white;
+  border: none;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 300ms;
+}
+
+.saveButton:hover:not(:disabled) {
+  background: #8B6450;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 120, 101, 0.3);
+}
+
+.saveButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Password Input Group */
+.passwordInputGroup {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #808080;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.passwordToggle:hover {
+  color: #A57865;
+}
+
+/* Password Strength Indicator */
+.passwordStrength {
+  margin-top: 12px;
+}
+
+.strengthLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5C5C5C;
+  margin-bottom: 8px;
+}
+
+.strengthBars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.strengthBar {
+  flex: 1;
+  height: 6px;
+  background: #E8E4E0;
+  border-radius: 3px;
+  transition: all 300ms;
+}
+
+.strengthBar.active {
+  background: #DC3545;
+}
+
+.strengthBar.active:nth-child(1) {
+  background: #DC3545;
+}
+
+.strengthBar.active:nth-child(2) {
+  background: #FFA500;
+}
+
+.strengthBar.active:nth-child(3) {
+  background: #2196F3;
+}
+
+.strengthBar.active:nth-child(4) {
+  background: #27AE60;
+}
+
+.strengthText {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.strengthWeak {
+  color: #DC3545;
+}
+
+.strengthFair {
+  color: #FFA500;
+}
+
+.strengthGood {
+  color: #2196F3;
+}
+
+.strengthStrong {
+  color: #27AE60;
+}
+
+/* Password Requirements */
+.passwordRequirements {
+  background: #FAF8F6;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.requirementItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #5C5C5C;
+  margin-bottom: 8px;
+}
+
+.requirementItem:last-child {
+  margin-bottom: 0;
+}
+
+.requirementItem svg {
+  flex-shrink: 0;
+}
+
+.requirementMet {
+  color: #27AE60;
+}
+
+.requirementMet svg {
+  color: #27AE60;
+}
+
+/* Two-Factor Card */
+.twoFactorCard {
+  background: #FAF8F6;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.twoFactorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.twoFactorLeft {
+  flex: 1;
+}
+
+.twoFactorTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.twoFactorTitle svg {
+  color: #A57865;
+}
+
+.twoFactorDescription {
+  font-size: 14px;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.enabledBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #E8F5E9;
+  color: #27AE60;
+  padding: 6px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.enabledBadge svg {
+  color: #27AE60;
+}
+
+/* Toggle Switch */
+.toggleSwitch {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: #E8E4E0;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 300ms;
+  flex-shrink: 0;
+}
+
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSlider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  transition: all 300ms;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggleSwitch input:checked + .toggleSlider {
+  transform: translateX(24px);
+}
+
+.toggleSwitch.active {
+  background: #A57865;
+}
+
+/* Active Sessions */
+.sessionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.sessionCard {
+  background: #FAFAFA;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.sessionLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.sessionIcon {
+  width: 48px;
+  height: 48px;
+  background: #FAF8F6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sessionIcon svg {
+  color: #A57865;
+}
+
+.sessionInfo {
+  flex: 1;
+}
+
+.sessionDevice {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 4px;
+}
+
+.sessionDetails {
+  font-size: 13px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sessionCurrent {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #E8F5E9;
+  color: #27AE60;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.revokeButton {
+  background: transparent;
+  border: 1.5px solid #FFEBEE;
+  color: #DC3545;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.revokeButton:hover {
+  background: #FFEBEE;
+}
+
+/* Preferences Lists */
+.preferencesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.preferenceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #E8E4E0;
+}
+
+.preferenceItem:last-child {
+  border-bottom: none;
+}
+
+.preferenceLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.preferenceIcon {
+  width: 40px;
+  height: 40px;
+  background: #FAF8F6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.preferenceIcon svg {
+  color: #A57865;
+}
+
+.preferenceInfo {
+  flex: 1;
+}
+
+.preferenceTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 4px;
+}
+
+.preferenceDescription {
+  font-size: 13px;
+  color: #808080;
+  margin: 0;
+}
+
+/* Room Preferences Grid */
+.roomPreferencesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkboxItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #A57865;
+  flex-shrink: 0;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #2C2C2C;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkboxLabel svg {
+  color: #A57865;
+  flex-shrink: 0;
+}
+
+/* Privacy Section */
+.privacyToggles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* Data Management Cards */
+.dataManagementCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.actionCard {
+  background: #FAF8F6;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 300ms;
+}
+
+.actionCard:hover {
+  border-color: #A57865;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.actionCardIcon {
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.actionCardIcon svg {
+  color: #A57865;
+}
+
+.actionCardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 4px;
+}
+
+.actionCardDescription {
+  font-size: 13px;
+  color: #808080;
+  margin: 0 0 16px;
+}
+
+.actionCardButton {
+  background: #A57865;
+  color: white;
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 300ms;
+}
+
+.actionCardButton:hover {
+  background: #8B6450;
+}
+
+.deleteAccountCard {
+  grid-column: 1 / -1;
+  background: #FFF5F5;
+  border-color: #FFEBEE;
+}
+
+.deleteAccountCard .actionCardIcon {
+  background: #FFEBEE;
+}
+
+.deleteAccountCard .actionCardIcon svg {
+  color: #DC3545;
+}
+
+.deleteAccountCard .actionCardButton {
+  background: transparent;
+  border: 1.5px solid #DC3545;
+  color: #DC3545;
+}
+
+.deleteAccountCard .actionCardButton:hover {
+  background: #DC3545;
+  color: white;
+}
+
+/* Delete Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.deleteModal {
+  width: 500px;
+  max-width: 100%;
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.deleteModal svg {
+  margin-bottom: 16px;
+}
+
+.deleteModalTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.deleteWarning {
+  background: #FFF8E1;
+  border-left: 4px solid #FFA500;
+  padding: 12px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.deleteWarning svg {
+  color: #FFA500;
+  flex-shrink: 0;
+  margin: 2px 0 0 0;
+}
+
+.deleteWarning span {
+  font-size: 14px;
+  color: #2C2C2C;
+  line-height: 1.5;
+}
+
+.deleteConsequences {
+  background: #FAF8F6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.consequencesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.consequencesList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #5C5C5C;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.consequencesList li:last-child {
+  margin-bottom: 0;
+}
+
+.consequencesList li svg {
+  color: #DC3545;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.deleteConfirmInput {
+  width: 100%;
+  height: 48px;
+  background: #FAFAFA;
+  border: 1.5px solid #E8E4E0;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #2C2C2C;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 24px;
+  transition: all 300ms;
+}
+
+.deleteConfirmInput:focus {
+  outline: none;
+  border-color: #DC3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.deleteConfirmInput::placeholder {
+  color: #808080;
+  font-weight: 400;
+}
+
+.deleteModalButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.deleteKeepButton {
+  flex: 1;
+  height: 48px;
+  background: transparent;
+  border: 1.5px solid #E8E4E0;
+  color: #5C5C5C;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.deleteKeepButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+.deleteConfirmButton {
+  flex: 1;
+  height: 48px;
+  background: #DC3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.deleteConfirmButton:hover:not(:disabled) {
+  background: #C82333;
+}
+
+.deleteConfirmButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roomPreferencesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dataManagementCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileSettings {
+    padding: 24px;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .tabContent {
+    padding: 24px;
+  }
+
+  .tabNavigation {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .avatarSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatarActions {
+    width: 100%;
+  }
+
+  .uploadButton,
+  .removeButton {
+    width: 100%;
+  }
+
+  .formGrid {
+    gap: 20px;
+  }
+
+  .sessionCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sessionLeft {
+    width: 100%;
+  }
+
+  .revokeButton {
+    width: 100%;
+  }
+
+  .formActions {
+    flex-direction: column-reverse;
+  }
+
+  .cancelButton,
+  .saveButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileSettings {
+    padding: 16px;
+  }
+
+  .pageTitle {
+    font-size: 24px;
+  }
+
+  .tabContent {
+    padding: 20px;
+  }
+
+  .tabButton {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .avatarPlaceholder,
+  .avatarImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatarPlaceholder {
+    font-size: 32px;
+  }
+
+  .deleteModal {
+    padding: 24px;
+  }
+
+  .deleteModalTitle {
+    font-size: 20px;
+  }
+
+  .deleteModalButtons {
+    flex-direction: column;
+  }
+
+  .deleteKeepButton,
+  .deleteConfirmButton {
+    width: 100%;
+  }
+}

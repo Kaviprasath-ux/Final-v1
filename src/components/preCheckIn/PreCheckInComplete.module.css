@@ -1,0 +1,434 @@
+.complete {
+  width: 100%;
+  text-align: center;
+}
+
+.successIcon {
+  color: #27AE60;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.digitalKeyCard {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 48px;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  border-radius: 16px;
+  padding: 32px;
+  color: white;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.keyLabel {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.roomNumber {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.guestName {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.checkInDate {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.qrCode {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.qrPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: #2C2C2C;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.qrPattern {
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(90deg, #fff 25%, transparent 25%),
+    linear-gradient(#fff 25%, transparent 25%),
+    linear-gradient(90deg, transparent 75%, #fff 75%),
+    linear-gradient(transparent 75%, #fff 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px, 5px 5px, 0 0;
+}
+
+.nfcBadge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.shimmer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  to {
+    left: 100%;
+  }
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 32px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stepCard {
+  text-align: center;
+  padding: 24px;
+}
+
+.stepIcon {
+  color: #A57865;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.stepTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+}
+
+.stepDescription {
+  font-size: 14px;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.details {
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.detailsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 24px;
+}
+
+.detailsGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #F9F7F5;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+}
+
+.detailLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5C5C5C;
+}
+
+.detailValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+  text-align: right;
+}
+
+.emailNotice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: #E3F2FD;
+  border: 1px solid #2196F3;
+  border-radius: 8px;
+  color: #1976D2;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.actionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2C2C2C;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.actionButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.actionButton svg {
+  color: #A57865;
+}
+
+.timeline {
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.timelineTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 24px;
+}
+
+.timelineItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  opacity: 0.5;
+}
+
+.timelineItemComplete {
+  opacity: 1;
+}
+
+.timelineItem svg {
+  color: #A57865;
+  flex-shrink: 0;
+}
+
+.timelineItemComplete svg {
+  color: #27AE60;
+}
+
+.timelineItemTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin-bottom: 4px;
+}
+
+.timelineItemTime {
+  font-size: 14px;
+  color: #5C5C5C;
+}
+
+.help {
+  margin-bottom: 48px;
+}
+
+.helpTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 20px;
+}
+
+.helpButtons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.helpButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.helpButton:hover {
+  border-color: #A57865;
+  color: #A57865;
+}
+
+.doneSection {
+  margin-top: 48px;
+}
+
+.doneButton {
+  width: 100%;
+  max-width: 400px;
+  height: 64px;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.doneButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(165, 120, 101, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .digitalKeyCard {
+    padding: 24px;
+  }
+
+  .roomNumber {
+    font-size: 48px;
+  }
+
+  .qrCode {
+    width: 80px;
+    height: 80px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .helpButtons {
+    flex-direction: column;
+  }
+
+  .helpButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .doneButton {
+    max-width: 100%;
+  }
+}

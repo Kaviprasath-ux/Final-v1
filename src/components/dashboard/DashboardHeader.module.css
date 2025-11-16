@@ -1,0 +1,228 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: white;
+  border-bottom: 1px solid #E8E4E0;
+  z-index: 100;
+}
+
+.headerInner {
+  max-width: 100%;
+  height: 100%;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #2C2C2C;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.logo:hover {
+  color: #A57865;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.iconButton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #5C5C5C;
+  transition: all 300ms ease;
+}
+
+.iconButton:hover {
+  background: #F9F7F5;
+  color: #2C2C2C;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: #DC3545;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 12px 6px 6px;
+  background: transparent;
+  border: 1px solid #E8E4E0;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.userButton:hover {
+  border-color: #A57865;
+  background: #F9F7F5;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #A57865 0%, #8B6450 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.userName {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2C2C2C;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 240px;
+  background: white;
+  border: 1px solid #E8E4E0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  z-index: 1000;
+}
+
+.dropdownHeader {
+  padding: 12px 16px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+}
+
+.dropdownFooter {
+  padding: 8px 16px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #A57865;
+  text-align: center;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.dropdownFooter:hover {
+  color: #8B6450;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2C2C2C;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.menuItem:hover {
+  background: #F9F7F5;
+}
+
+.menuDivider {
+  height: 1px;
+  background: #E8E4E0;
+  margin: 4px 0;
+}
+
+.notificationItem {
+  padding: 12px 16px;
+  border-bottom: 1px solid #F9F7F5;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.notificationItem:last-of-type {
+  border-bottom: none;
+}
+
+.notificationItem:hover {
+  background: #F9F7F5;
+  border-radius: 6px;
+}
+
+.notificationTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin-bottom: 4px;
+}
+
+.notificationText {
+  font-size: 13px;
+  color: #5C5C5C;
+  margin-bottom: 4px;
+}
+
+.notificationTime {
+  font-size: 12px;
+  color: #808080;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .headerInner {
+    padding: 0 24px;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .userName {
+    display: none;
+  }
+
+  .rightSide {
+    gap: 12px;
+  }
+
+  .iconButton {
+    width: 36px;
+    height: 36px;
+  }
+
+  .dropdownMenu {
+    min-width: 200px;
+  }
+}
